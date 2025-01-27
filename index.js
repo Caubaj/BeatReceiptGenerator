@@ -19,28 +19,19 @@ let beatLabel = document.querySelectorAll("[id$='-label']");
 let checkBoxes = document.querySelectorAll(`input[type="checkbox"]`);
 let purchases = document.getElementById("purchases")
 let beatsDiv = purchases.querySelectorAll('.beat');
-
 const subTotal = document.getElementById("sub-total");
 const taxDisplay = document.getElementById("tax-display");
 const taxInput = document.getElementById("tax-in");
 const finalTotal = document.getElementById("final-total");
 const dateDisplay = document.getElementById("date-number");
-
 const currentDate = new Date();
-
 const billContainer = document.getElementById("bill-container");
-
 billContainer.style.display ="none"
-
 let total = 0;
 let taxx = 0;
 
-
-
 function display()
 {
-   
-    
     total = 0;
     
     userInputs.forEach((input, index)=>
