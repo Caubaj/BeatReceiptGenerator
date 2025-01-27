@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="input-container">
+        <h1>Purchase Info</h1>
+        <div id="input-address" class ="in">
+            <h3>Input Address: </h3>
+            <input type="text" id="address-input">
+        </div>
+
+        <div id="input-Telephone" class ="in">
+            <h3>Input Phone Number: </h3>
+            <input type="text" id="telephone-input">
+        </div>
+
+        <div id="input-manager" class ="in">
+            <h3>Manager:  </h3>
+            <input type="text" id="manager-input">
+        </div>
+
+        <div id="input-purchases" class ="in">
+            <h2>Beats</h2>
+            <div id="beat1">
+                <input type="checkbox" class = "checkboxs">
+                <label for="beat1">Beat 1 Price: $</label>
+                <input id="beat1-price" type = "number" placeholder="$12:99...">
+            </div>
+            <div id="beat2">
+                <input type="checkbox" class = "checkboxs">
+                <label for="beat2">Beat 2 Price: $</label>
+                <input id="beat2-price" type = "number" placeholder="$12:99...">
+            </div>
+            <div id="beat3">
+                <input type="checkbox" class = "checkboxs">
+                <label for="beat3">Beat 3 Price: $</label>
+                <input id="beat3-price" type = "number" placeholder="$12:99...">
+            </div>
+        </div>
+
+        <div id="input-addTax" class ="in">
+            <h3>How much tax?</h3>
+            <input type="number" id="tax-in">
+        </div>
+        <button onclick = "display()">Submit</button>
+    </div>
+
+
+
+
+    <div id="bill-container">
+        <div id="top">
+            <h1>CASH RECEIPT</h1>
+            <H2>Caubaj</H2>
+        </div>
+
+        <div id="user-details">
+            <div id="address">
+                <h3>Address: </h3>
+                <h3 id="address-name">Lorem Ipsum 3/18</h4>
+            </div>
+
+            <div id="Telephone">
+                <h3>Phone: </h3>
+                <h3 id="tel-number-name">0987 123 890 5678</h4>
+            </div>
+
+            <div id="date">
+                <h3>Date: </h3>
+                <h3 id="date-number">MM/DD/YYYY</h4>
+            </div>
+
+            <div id="manager">
+                <h3>Manager: </h3>
+                <h3 id="manager-name">Lorem </h4>
+            </div>
+        </div>
+        <div id="purchases">
+            <div id="items" class="beat">
+                <h3 id="item1">Beat1: </h3>
+                <h3 id="price1-label" >$19.99</h3>
+            </div>
+            <div id="items" class="beat">
+                <h3 id="item2">Beat2: </h3>
+                <h3 id="price2-label">$19.99</h3>
+            </div>
+            <div id="items" class="beat">
+                <h3 id="item2">Beat3: </h3>
+                <h3 id="price3-label" >$19.99</h3>
+            </div>
+        </div>
+
+        <div id="calculate">
+            <div id="price">
+                <h3>SubTotal: </h3>
+                <h3 id="sub-total">$00.00</h3>
+            </div>
+            <div id="tax">
+                <h3>Tax: </h3>
+                <h3 id="tax-display">10%</h3>
+            </div>
+        </div>
+
+        <div id="total">
+            <h3>Total: </h3>
+            <h3 id="final-total">$65.97</h3>
+        </div>
+
+        <div class="barcode-container">
+            
+            <svg class="barcode"  jsbarcode-format="upc"
+            jsbarcode-value="123456789012"
+            jsbarcode-textmargin="0"
+            jsbarcode-fontoptions="bold">
+            </svg>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js" integrity="sha512-k2wo/BkbloaRU7gc/RkCekHr4IOVe10kYxJ/Q8dRPl7u3YshAQmg3WfZtIcseEk+nGBdK03fHBeLgXTxRmWCLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>

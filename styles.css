@@ -1,0 +1,198 @@
+:root{
+    --primary: #f1f5f9;
+    --secondary: #64748b;
+    --bg: #020617;
+}
+
+* 
+{
+    font-family: 'Space Mono', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-duration: 200ms;
+}
+
+body
+{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    gap: 100px;
+}
+
+/* recepit styling ---___-- */
+#bill-container
+{
+    font-size: 1.2em;
+    box-shadow: 10px 10px 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    overflow: hidden ;
+    width: 30rem;
+}
+
+#top
+{
+    border-bottom: 3px double black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+#top h1
+{
+    font-weight: bold;
+}
+#top h2
+{
+    font-weight:lighter;
+}
+
+#user-details
+{
+    padding: 10px;
+    font-weight: lighter;
+    border-bottom: 3px double black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+#address,
+#Telephone,
+#date,
+#manager
+{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 3em;  
+}
+
+#purchases
+{ 
+    padding: 10px;
+    border-bottom: 3px double black;
+}
+
+#items
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#calculate
+{
+    border-bottom: 3px double black;
+    font-weight: bold;
+    padding: 10px;
+   
+}
+#price,
+#tax
+{
+ 
+    display: flex;
+    justify-content: space-between;
+}
+
+#total
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px dotted #0000008e;
+   
+}
+
+input{
+    text-align: center;
+    font-size: 1.2em;
+    background-color: hsl(189, 100%, 50%);
+    color: hsl(0, 0%, 0%);
+    
+}
+.checkboxs 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+#input-container
+{
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid black;
+    gap: 20px;
+}
+
+#input-purchases #beat1,
+#input-purchases #beat2,
+#input-purchases #beat3
+{
+    display: flex;
+    align-items: center;
+}
+
+#input-address,
+#input-Telephone,
+#input-manager,
+#input-addTax
+{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#beat1,
+#beat2,
+#beat3
+{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+button
+{
+    font-size: 2em;
+    background-color: hsl(189, 100%, 35%);
+    color: hsl(189, 100%, 90%);
+    border: none;
+    border-radius: 20px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover
+{
+    background-color: hsl(189, 100%, 30%);
+    color: hsl(189, 100%, 90%);
+}
+
+button:active
+{
+    background-color: hsl(189, 100%, 50%);
+    color: hsl(189, 100%, 90%);
+    transform: translateY(-5px);
+}
+
+.barcode-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
